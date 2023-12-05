@@ -14,7 +14,7 @@ cd django_stripe_app
 ```
 
 ### Запуск с помощью Docker:
-Создать файл .env с переменными окружения (пза основу можно взять файл env_example):
+Создать файл .env с переменными окружения (за основу можно взять файл env_example):
 ```
 STRIPE_PUBLISHABLE_KEY=
 STRIPE_SECRET_KEY=
