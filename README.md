@@ -14,6 +14,16 @@ cd django_stripe_app
 ```
 
 ### Запуск с помощью Docker:
+Создать файл .env с переменными окружения (пза основу можно взять файл env_example):
+```
+STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+SECRET_KEY=
+DEBUG=
+```
+STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY - API ключи для работы со Stripe. Брать тут https://dashboard.stripe.com/test/apikeys
+SECRET_KEY - секретный ключ Django. Необязательный.  
+DEBUG - режим дебага True/False. Необязательный. по дефолту True.  
 
 Создать образ:
 
