@@ -12,7 +12,7 @@ TEMPLATES_DIR = Path.joinpath(BASE_DIR, 'templates')
 
 SECRET_KEY = os.getenv('SECRET_KEY', '8t6c^uvn^r@wmocz7^0rwia=lszy4p4sc2of6xw62tbl7und5_')
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
