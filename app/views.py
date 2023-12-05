@@ -23,13 +23,13 @@ def stripe_config(request):
 @csrf_exempt
 def create_checkout_session(request, item_id):
     if request.method == "GET":
-        domain_url = "http://localhost:8000/"
+        referer_url = request.META.get('HTTP_REFERER')
         stripe.api_key = settings.STRIPE_SECRET_KEY
         item = get_object_or_404(Item, pk=item_id)
         try:
             checkout_session = stripe.checkout.Session.create(
-                success_url=domain_url,
-                cancel_url=domain_url,
+                success_url=referer_url,
+                cancel_url=referer_url,
                 payment_method_types=["card"],
                 mode="payment",
                 line_items=[

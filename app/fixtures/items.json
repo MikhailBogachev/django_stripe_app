@@ -1,0 +1,52 @@
+[
+    {
+      "model": "app.item",
+      "pk": 1,
+      "fields": {
+        "name": "apple",
+        "description": "red apple",
+        "price": "2",
+        "currency": "usd"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 2,
+      "fields": {
+        "name": "banana",
+        "description": "yellow banana",
+        "price": "150",
+        "currency": "rub"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 3,
+      "fields": {
+        "name": "lemon",
+        "description": "yellow lemon",
+        "price": "2",
+        "currency": "usd"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 4,
+      "fields": {
+        "name": "lime",
+        "description": "green lime",
+        "price": "250",
+        "currency": "rub"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 5,
+      "fields": {
+        "name": "mango",
+        "description": "yellow mango",
+        "price": "5",
+        "currency": "usd"
+      }
+    }
+]

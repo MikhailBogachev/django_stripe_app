@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-slim
 ENV PYTHONUNBUFFERED 1
 
 # App setup
@@ -7,7 +7,3 @@ WORKDIR /code
 
 # Requirements installation
 RUN pip install -r requirements.txt
-
-#COPY ./entrypoint.sh /
-#ENTRYPOINT ["entrypoint.sh"]
-#CMD ["python manage.py runserver"]
